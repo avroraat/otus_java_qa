@@ -20,7 +20,7 @@ public abstract class Animal {
     }
 
     public void setAge(Integer age) {
-        if (age < 0) throw new NumberFormatException("Возраст должен быть положительным числом");
+        if (age <= 0) throw new NumberFormatException("Возраст должен быть положительным числом");
         this.age = age;
     }
 
@@ -29,7 +29,7 @@ public abstract class Animal {
     }
 
     public void setWeight(Integer weight) {
-        if (weight < 0) throw new NumberFormatException("Вес должен быть положительным числом");
+        if (weight <= 0) throw new NumberFormatException("Вес должен быть положительным числом");
         this.weight = weight;
     }
 
